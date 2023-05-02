@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chat System</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="https://kit.fontawesome.com/540ea8b9ba.js" crossorigin="anonymous"></script>
+<style>
+.chat {
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100vh;
+}
+
+#message-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.message-bubble {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #007bff;
+  color: #fff;
+  max-width: 70%;
+}
+
+.bubble-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.bubble-input input {
+  flex: 1;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+}
+
+.bubble-input button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.automated-bubble {
+  background-color: #77dd77;
+  color: #fff;
+  align-self: flex-end;
+}
+
+</style>
+  </head>
+  <body>
+
+    <div class="container">
+        <div id="home" class="flex-center flex-column">
+    <script defer src="chat.js"></script>
+    <div class="chat">
+        <div id="message-container"></div>
+        <div class="bubble-input">
+          <input type="text" id="message-input" placeholder="Type your message...">
+          <button id="send-button">Send</button>
+        </div>
+        <br><br><br><br><br><br>
+      </div>
+
+
+      <div class="navbar">
+        <a href="/index.html" >
+          <i class="fas fa-home"></i>
+          Home
+        </a>
+        <a href="/chat.html" class="active">
+          <i class="fas fa-comments"></i>
+          Chat
+        </a>
+        <a href="/profile.html">
+          <i class="fas fa-user"></i>
+          Profile
+        </a>
+        <a href="#settings">
+          <i class="fas fa-cog"></i>
+          Settings
+        </a>
+        </div>
+        </div>
+      </div>
+  </body>
+</html>

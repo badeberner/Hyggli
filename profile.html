@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hyggli - Profile</title>
+    <link rel="stylesheet" href="profile.css" />
+    <script src="https://kit.fontawesome.com/540ea8b9ba.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+        <div id="home" class="flex-center flex-column">
+      <div id="profile" class="flex-center flex-column">
+        <div class="back-button">
+          <a href="#" onclick="goBack()">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+        </div>
+        <div class="profile-image">
+          <img src="./media/Asset 1.svg" alt="Profile Picture"/>
+        </div>
+        <div class="profile-info">
+          <h1>John Doe</h1>
+          <p>27 years old</p>
+          <p>Helsinki</p>
+          <p>johndoe@email.com</p>
+          <p>Intiankatu 15, 00560 Helsinki</p>
+          <p>50m²</p>
+        </div>
+        <div class="edit-button">
+          <a href="#">
+            <i class="fas fa-edit"></i>
+            Edit Profile
+          </a>
+        </div>
+      </div>
+      <div class="navbar">
+        <a href="/index.html" >
+          <i class="fas fa-home"></i>
+          Home
+        </a>
+        <a href="/choosechat.html" >
+          <i class="fas fa-comments"></i>
+          Chat
+        </a>
+        <a href="/profile.html" class="active">
+          <i class="fas fa-user"></i>
+          Profile
+        </a>
+        <a href="#settings">
+          <i class="fas fa-cog"></i>
+          Settings
+        </a>
+      </div>
+
+    </div>
+
+    
+    </div>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+
+    
+  </body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Chat Page</title>
+  <link rel="stylesheet" href="app.css" />
+  <script src="https://kit.fontawesome.com/540ea8b9ba.js" crossorigin="anonymous"></script>
+  <style>
+    /* Add your CSS styles here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    
+    
+    .sidebar {
+      flex: 0 0 25%;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    
+    .sidebar h1 {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    
+    .conversation-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .conversation-list li {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      cursor: pointer;
+    }
+    
+    .conversation-list li:hover {
+      background-color: #ddd;
+    }
+    
+    .conversation-list li.active {
+      background-color: #007bff;
+      color: #fff;
+    }
+    
+    .conversation-list li .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #007bff;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      margin-right: 10px;
+    }
+    
+    .conversation-list li .name {
+      font-weight: bold;
+      flex: 1;
+    }
+    
+    .conversation-list li .time {
+      font-size: 12px;
+      color: #999;
+    }
+    
+    .conversation {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .conversation h2 {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+    
+    .message-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .message-bubble {
+      display: inline-block;
+      padding: 10px;
+      border-radius: 20px;
+      background-color: #007bff;
+      color: #fff;
+      max-width: 70%;
+    }
+    
+    .input-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      border-radius: 20px;
+      background-color: #f2f2f2;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      margin: 10px;
+    }
+    
+    .input-container input {
+      flex: 1;
+      border: none;
+      outline: none;
+      margin-right: 10px;
+    }
+    
+    .input-container button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      outline: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+            <div id="home" class="flex-start flex-column">
+    <script defer src="chatchooser.js"></script>
+    <div class="sidebar">
+        <ul class="conversation-list">
+          <li data-url="chat.html">
+            <div class="avatar">A</div>
+            <div class="details">
+              <div class="name">Alice</div>
+              <div class="time">10:30 AM</div>
+            </div>
+          </li>
+          <li data-url="chat.html">
+            <div class="avatar">B</div>
+            <div class="details">
+              <div class="name">Bob</div>
+              <div class="time">Yesterday</div>
+            </div>
+          </li>
+          <li data-url="chat.html">
+            <div class="avatar">C</div>
+            <div class="details">
+              <div class="name">Charlie</div>
+              <div class="time">2 days ago</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+    
+      <div class="navbar">
+        <a href="/index.html">
+          <i class="fas fa-home"></i>
+          Home
+        </a>
+        <a href="/choosechat.html"  class="active">
+          <i class="fas fa-comments"></i>
+          Chat
+        </a>
+        <a href="/profile.html">
+          <i class="fas fa-user"></i>
+          Profile
+        </a>
+        <a href="#settings">
+          <i class="fas fa-cog"></i>
+          Settings
+        </a>
+      </div>
+ </div>
+</div>
+    </body>
+    </html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hyggli</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/540ea8b9ba.js" crossorigin="anonymous"></script>
+    <style>
+      body {
+        overflow-y: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="home" class="flex-center flex-column">
+
+        <form id="address-form">
+          <label for="address">Enter your address:</label>
+          <input type="text" id="address" name="address">
+          <br>
+          <button type="button" onclick="displayAddress()" class="submit-button">Submit</button>
+        </form>
+        
+        <p id="display"></p>
+
+        <script>
+          function displayAddress() {
+            var address = document.getElementById("address").value;
+            document.getElementById("display").innerHTML = "Your address is: " + address;
+            
+            // Remove form and button elements
+            var form = document.getElementById("address-form");
+            form.remove();
+          }
+        </script>
+
+      <br><br>
+        
+        <img src="./media/Asset 1.svg" style="width: 150px">
+        <br>
+        
+        <a class="btn" href="/townhouse.html"><i class="fas fa-home fa-fw" style="color: cyan;"></i> <span style="color: cyan;">Town house</span></a>
+        <a class="btn" href="/apartment.html"><i class="fas fa-building fa-fw" style="color: cyan;"></i> <span style="color: cyan;">Apartment</span></a>
+        <a class="btn" href="/office.html"><i class="fas fa-briefcase fa-fw" style="color: cyan;"></i> <span style="color: cyan;">Office</span></a>
+        <a class="btn" href="/carcleaning.html"><i class="fas fa-hand-holding-water fa-fw" style="color: cyan;"></i> <span style="color: cyan;">Car cleaning</span></a>
+        
+        <br><br><br><br>
+
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="./media/img1.jpg" style="width:300px">
+              <div class="text">Rate our app, get -10%.</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <img src="./media/img2.jpg" style="width:300px">
+              <div class="text">Refer a friend!</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="./media/img2.jpg" style="width: 300px">
+                <div class="text">New users -15% on first order.</div>
+              </div>
+          
+          
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+
+
+          <br><br><br><br><br><br>
+    
+          <div class="navbar">
+            <a href="/index.html" class="active">
+              <i class="fas fa-home"></i>
+              Home
+            </a>
+            <a href="/choosechat.html">
+              <i class="fas fa-comments"></i>
+              Chat
+            </a>
+            <a href="/profile.html">
+              <i class="fas fa-user"></i>
+              Profile
+            </a>
+            <a href="#settings">
+              <i class="fas fa-cog"></i>
+              Settings
+            </a>
+          </div>
+     </div>
+    </div>
+  </body>
+</html>
