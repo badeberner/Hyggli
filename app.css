@@ -116,11 +116,12 @@ h3 {
 * {box-sizing:border-box}
 
 .text {
-  color: #f2f2f2;
-  font-size: 30px;
+  font-family:Arial Black;
+  color: white;
+  font-size: 25px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  top: 8px;
   width: 100%;
   text-align: left;
 }
